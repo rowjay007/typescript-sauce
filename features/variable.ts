@@ -36,6 +36,36 @@ const logNumber: (i: number) => void = (i: number) => {
 //Any type is just as "string" or boolean are
 // Avoid variable with "any" at all costs
 
-const json = '{"x": 10, "y": 20}';
+/* const json = '{"x": 10, "y": 20}';
 const coordinates = JSON.parse(json);
+console.log(coordinates); //{"x": 10, "y": 20} */
+
+//fixing the "any" type
+
+const json = '{"x": 10, "y": 20}';
+const coordinates: { x: number; y: number } = JSON.parse(json);
 console.log(coordinates); //{"x": 10, "y": 20}
+
+// 2) When we declare a variable on the line
+//and initiate it late
+
+let words = ["red", "green", "blue"];
+let foundedWord = false;
+
+for (let i = 0; i < words.length; i++) {
+  if (words[i] === "green") {
+    foundedWord = true;
+  }
+}
+
+
+// 3) Variable whose type cannot be inferred correctly
+
+let numbers = [-10, -1, 12]
+let numberAboveZero: boolean | number = false
+
+for (let i = 0; i < words.length; i++) {
+  if (numbers[i] > 0) {
+    numberAboveZero = numb ers[i]
+  }
+}

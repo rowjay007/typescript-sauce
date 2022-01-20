@@ -29,6 +29,28 @@ var logNumber = function (i) {
 // 1) Function that returns the "any" type
 //Any type is just as "string" or boolean are
 // Avoid variable with "any" at all costs
+/* const json = '{"x": 10, "y": 20}';
+const coordinates = JSON.parse(json);
+console.log(coordinates); //{"x": 10, "y": 20} */
+//fixing the "any" type
 var json = '{"x": 10, "y": 20}';
 var coordinates = JSON.parse(json);
 console.log(coordinates); //{"x": 10, "y": 20}
+// 2) When we declare a variable on the line
+//and initiate it late
+var words = ["red", "green", "blue"];
+var foundedWord = false;
+for (var i = 0; i < words.length; i++) {
+    if (words[i] === "green") {
+        foundedWord = true;
+    }
+}
+// 3) Variable whose type cannot be inferred correctly
+var numbers = [-10, -1, 12];
+var numberAboveZero = false;
+for (var i = 0; i < words.length; i++) {
+    if (numbers[i] > 0) {
+        numberAboveZero = numb;
+        ers[i];
+    }
+}
