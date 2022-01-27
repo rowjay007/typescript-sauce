@@ -1,10 +1,9 @@
-// Types will be used everywhere in TypeScript
 var today = new Date();
 today.getMonth();
 var person = {
-    age: 35
+    age: 35,
 };
-var Color = /** @class */ (function () {
+var Color = (function () {
     function Color() {
     }
     return Color;
