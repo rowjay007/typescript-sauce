@@ -1,16 +1,16 @@
-var profile = {
+const profile = {
     name: "alex",
     age: 20,
     coords: {
         lat: 0,
         lng: 15,
     },
-    setAge: function (age) {
+    setAge(age) {
         this.age = age;
     },
 };
-var age = profile.age, name = profile.name;
-var _a = void 0;
+const { age, name } = profile;
+const {};
 {
     coords: {
         lat, lng;
