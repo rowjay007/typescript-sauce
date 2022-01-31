@@ -4,7 +4,7 @@ const drink = {
   sugar: 40,
 };
 
-//Type alais
+//Type alias
 types Drink = [string, boolean, number];
 
 const pepsi: Drink = ['brown', true, 40];
