@@ -3,8 +3,6 @@ const drink = {
     carbonated: true,
     sugar: 40,
 };
-types;
-Drink = [string, boolean, number];
 const pepsi = ['brown', true, 40];
 const sprite = ['clear', true, 40];
 const tea = ['brown', true, 0];
