@@ -11,7 +11,7 @@ const oldCivic = {
   },
 };
 
-const drink = {
+const drink = { 
   color: "string",
   carbonated: true
   sugar: 40,
