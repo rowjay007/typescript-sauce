@@ -19,6 +19,12 @@
   },
   "homepage": "https://github.com/rowjay007/typescript-sauce#readme",
   "dependencies": {
-    "axios": "^0.25.0"
+    "@types/faker": "^6.6.9",
+    "@types/node": "^17.0.18",
+    "axios": "^0.25.0",
+    "faker": "^6.6.6"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5"
   }
 }

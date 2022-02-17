@@ -36,7 +36,7 @@ class Car extends Vehicle {
   constructor(public wheels: number, color: string) {
     super(color);
   }
-
+ko
   private drive(): void {
     console.log("vroom");
   }
