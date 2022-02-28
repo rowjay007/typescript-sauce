@@ -3,11 +3,11 @@ import { MatchResult } from "./MatchResults";
 import { dateStringToDate } from "./utils";
 
 type MatchData = [Date, string, string, number, number, MatchResult, string];
-export abstract class CsvFileReader {
-  data: MatchData[] = [];
+export abstract class CsvFileReader<T> {
+  data: T[] = [];
   constructor(public filename: string) {}
 
-  abstract mapRow(row: string[]): MatchData;
+  abstract mapRow(row: string[]): T;
 
   read(): void {
     this.data = fs
