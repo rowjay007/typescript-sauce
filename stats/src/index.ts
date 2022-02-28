@@ -4,6 +4,7 @@ import { MatchResult } from "./MatchResults";
 const reader = new CsvFileReader("football.csv");
 reader.read();
 
+
 /* const MatchResult = {
   awayWin: "A",
   homeWin: "H",
