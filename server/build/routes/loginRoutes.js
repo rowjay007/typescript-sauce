@@ -12,7 +12,7 @@ router.get("/login", (req, res) => {
   <input name="email" />
   </div>
   <div>
-   <label>Email </label>
+   <label>Password </label>
   <input name="password" type"password" />
   
   </div>
@@ -22,5 +22,11 @@ router.get("/login", (req, res) => {
 });
 router.post("/login", (req, res) => {
     const { email, password } = req.body;
-    res.send(email + password);
+    if (email && password && email === "hi@hi.com" && password === "password") {
+        req.session = { loggedIn: true };
+        res.redirect("/");
+    }
+    else {
+        res.send("invalid email or password");
+    }
 });
