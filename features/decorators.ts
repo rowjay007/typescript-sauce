@@ -29,5 +29,3 @@ function logError(errorMessage: string) {
     };
   };
 }
-
-new Boat().pilot();
