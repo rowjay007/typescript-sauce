@@ -54,7 +54,7 @@ router.get("/", (req: Request, res: Response) => {
     <div>
     <div>You are Logged out</div>
     <a href="/login">Login</a>
-    </div>
+    </div>v
     `);
   }
 });
